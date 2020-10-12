@@ -1,0 +1,254 @@
+@mixin button {
+    height: 50px;
+    width: 140px;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color:$button_color;
+    color: #fff;
+    border-radius: 3px;
+}
+
+@mixin header_link {
+    color: #fff;
+    font-weight: 600;
+}
+
+@mixin section_link {
+    color: $font_container_color;
+}
+
+
+
+body {
+    margin: 0 0 0 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $body_color;
+}
+
+.landing-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    img {
+        margin-right: 10px;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 21px;
+        font-weight: 600;
+        margin-top: 1rem;
+
+        span {
+            font-size: 10px;
+        }
+
+    }
+
+}
+
+.header {
+    position: relative;
+    background-image: $img_light;
+    background-position: center;
+    height: $logo_height;
+    border-radius: $header_border_r;
+
+
+
+    .header-wrap {
+        position: absolute;
+        width: 540px;
+        margin: 0px auto 175px 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: initial;   
+        color: $font_head_color; 
+
+        
+    
+        .header_heading {
+          font-size: 4rem;
+          font-weight: bold;
+          line-height: 100%;
+          margin-top: 2.5rem;
+          margin-bottom: 0;
+          position: relative;
+          z-index: 1;
+
+          &::after {
+            @extend %after_style;
+            width: map-get($after_width,header_width);
+            height: map-get($after_height,header_height);
+            left: 0px;
+            
+          }
+
+        }
+    
+        .header_text {
+            margin: 2.5rem auto;
+        }
+
+        .header_button {
+            margin-right: 8rem;
+            @include button;
+           
+        }
+
+        .login {
+            @include header_link;
+        }
+
+    }
+
+    
+
+   
+
+   
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .section_text {
+        font-size: 38px;
+        font-weight: 600;
+        color: $font_head_color;
+        position: relative;
+
+        &::after {
+            @extend %after_style;
+            width: map-get($after_width,section_header_width);
+            height: map-get($after_height,section_height);
+            right: 10px;
+
+          }
+        
+    }
+
+    .section_card_wrap {
+        
+        .section_card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60rem;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: $background_color;
+            border-radius: 5px;
+
+            .section_card_right_container {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                margin: auto;
+                text-align: center;
+                color: $font_container_color;
+
+                .section_card_text {
+                    text-align: justify;
+                    font-size: 15px;
+                    
+                }
+
+                .section_link {
+                    @include section_link;
+                }
+                
+                .section_card_heading {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #fff;
+                }
+
+            }
+
+            .section_card_img {
+                height: auto;
+                width: 405px;
+            }
+
+            
+        }
+    }
+
+    .section_banner {
+        position: absolute;
+        bottom: -21%;
+        width: 48rem;
+        padding: 1.3rem 9rem 2rem 9rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend %banner_gradient;
+
+        
+        .section_banner_button {
+            @include button;
+        }
+
+        .section_banner_heading {
+            position: relative;
+            z-index: 1;
+            margin: 0px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color:  $font_head_color;
+
+            &::after {
+                @extend %after_style;
+                width: map-get($after_width,banner_header_width);
+                height: map-get($after_height,footer_height);
+                left: 115px;
+    
+              }
+            
+        }
+
+        .section_banner_text {
+            color: $font_container_color;
+        }
+
+       
+    }
+
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+    padding: 2.5rem 10rem 0 10rem;
+    height: 150px;
+    background-color: $background_color;
+    color: $font_container_color;
+
+    .footer_text {
+        width: 290px;
+        text-align: justify;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+
+}
+
+
+
+
+

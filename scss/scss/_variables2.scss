@@ -1,0 +1,30 @@
+$body_color: #21232e;
+$logo_height: 600px;
+$img_light: url("../img/m-h-night.jpg");
+$header_border_r: 0 0 35% 0;
+$background_color: #3b3f50;
+$font_head_color: #fff;
+$font_container_color: #b0b1b8;
+$after_color: #ff4e33;
+$button_color: #e3ac00;
+$after_width: (
+    "header_width":270px,
+    "section_header_width":170px,
+    "banner_header_width":60px
+);
+$after_height: (
+    "header_height":50px,
+    "section_height":50px,
+    "footer_height":45px
+);
+%banner_gradient {
+    background: rgb(221,160,35);
+    background: linear-gradient(90deg, rgba(221,160,35,1) 0%, rgba(182,29,62,0.9956933456976541) 95%);
+} 
+%after_style {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    background-color: $after_color;
+}
