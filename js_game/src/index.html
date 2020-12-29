@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW_8</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="pseudo-start">
+    <button type="submit" class="pseudo-start__btn" id="pseudo_btn">Start new game</button>
+  </div>
+  <div class="game">
+    <div class="content">
+      <div class="game__header">
+        <button type="submit" class="game__btn-new-game" id="start_btn">Start new game</button>
+        <button type="submit" class="game__btn-skip" id="skip_btn">Skip question</button>
+      </div>
+      <div class="game__main">
+        <h1 class="game__question" id="question">Lorem</h1>
+        <div class="game__answers-wrapper">
+          <ul class="game__list">
+            <li class="game__answer1"><button class="game__answer-btn" id="answer0">Lorem</button></li>
+            <li class="game__answer2"><button class="game__answer-btn" id="answer1">Lorem</button></li>
+            <li class="game__answer3"><button class="game__answer-btn" id="answer2">Lorem</button></li>
+            <li class="game__answer4"><button class="game__answer-btn" id="answer3">Lorem</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="game__footer">
+        <div class="row game__t-prize-wrapper">
+          <p class="game__total-prize">Total prize: </p>
+          <p id="total_prize"></p>
+        </div>
+
+        <div class="row game__cur-prize-wrapper">
+          <p class="game__curr-prize">Prize on current round: </p>
+          <p id="current_prize"></p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

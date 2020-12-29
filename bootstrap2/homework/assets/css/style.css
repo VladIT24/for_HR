@@ -1,0 +1,226 @@
+﻿* {
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+  background-image: url(/assets/img/header-bg.jpg)
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.header-img__wrapper {
+  background-image: url(/assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.header-title {
+  font-size: 5vw;
+}
+
+.header-sub-title {
+  font-size: 3vw;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.services {
+  background-color: #fff;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+
+.title__logo {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.title__text {
+  color: #666;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.title__text::after {
+  position: absolute;
+  left: 47.5%;
+  top: 35px;
+  display: block;
+  content: "";
+  width: 57px;
+  height: 3px;
+  background-color: #666;
+
+}
+
+.card-img-top {
+  width: 40%;
+}
+
+.card {
+  border: none;
+  color: #666;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.card-text {
+  font-weight: 300;
+}
+
+.header__btn-wrapper .btn {
+  border: none;
+  border-radius: 20px;
+  background-image: url(/assets/img/touch-bg.png);
+  background-size: cover;
+}
+
+.works {
+  background-color: lightgrey;
+  padding: 3em 0;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.grid-wrapper .img-fluid {
+  width: 100%;
+}
+
+.item1 {
+  grid-column-start: 3;
+  grid-row: 1 / span 2;
+  height: 100%;
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-row: 2 / span 2;
+  height: 100%;
+}
+
+.references {
+  background-color: #fff;
+  padding: 3em 0;
+  position: relative;
+}
+
+.references::before {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: url(../img/slider-prev-arrow.png);
+  position: absolute;
+  left: 70px;
+  top: 50%;
+}
+
+.references::after {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: url(../img/slider-next-arrow.png);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.ref-card-body {
+  padding: 3em;
+}
+
+.references .card-title {
+  text-align: start;
+}
+
+.card-img-wrapper {
+  position: relative;
+  height: 350px;
+}
+
+.card-img-right-top {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  height: 95%;
+  width: 95%;
+}
+
+.card-img-left-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  height: 50%;
+}
+
+.contacts {
+  background-color: #000;
+  padding: 3em 0;
+}
+
+.contacts .title__text {
+  color: #fff;
+}
+
+.form-control {
+  border-radius: 0px;
+  background-color: #000;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.btn-wrapper .btn {
+  background-color: rgb(61, 61, 61);
+  padding: 10px 3rem;
+  border: none;
+  border-radius: 0px;
+}
+
+.footer {
+  background-image: url(/assets/img/footer-bg.jpg);
+  padding: 2em;
+  color: #fff;
+}
+
+.emails img {
+  width: 26px;
+  height: 20px;
+  margin-right: 1em;
+}
+
+.social__text {
+  text-align: end;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 1em;
+}
